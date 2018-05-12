@@ -1,3 +1,3 @@
 import PersonList from "./PersonList";
-import PersonDetails from './PersonDetails';
-export { PersonList, PersonDetails }
+import PersonDetail from "./PersonDetail";
+export { PersonList, PersonDetail };
