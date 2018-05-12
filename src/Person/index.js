@@ -1,2 +1,2 @@
-import PersonList from "./PersonList";
-import PersonDetails from './PersonDetails';
+export * from "./PersonList";
+export * from './PersonDetails';
