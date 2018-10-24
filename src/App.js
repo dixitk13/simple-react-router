@@ -1,26 +1,20 @@
 import React, { Component, Fragment } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
-import Home from "./Home";
-
-import PersonComponent from "./Person";
+import Home from "./components/Home";
+import Error from "./components/Error";
+import Person from "./components/Person";
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <h1>App Home Page</h1>
-        <ul>
-          <li>
-            <Link to="/home">App Home</Link>
-          </li>
-          <li>
-            <Link to="/person">List of Persons</Link>
-          </li>
-        </ul>
+        <h1>Sorting Algorithms</h1>
         <Switch>
           <Route exact path="/home" component={Home} />
-          <Route path="/person" component={PersonComponent} />
+          <Route path="/person" component={Person} />
+          <Route exact path="/" component={Home} />
+          <Route path="*" component={Error} />
         </Switch>
       </Fragment>
     );

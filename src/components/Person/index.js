@@ -15,10 +15,10 @@ const PersonComponent = () => (
         <Link to="/person/2">Person 2</Link>
       </li>
     </ul>
-    {/*<Switch>*/}
-    {/*<Route path="/person/:id" component={PersonDetail} />*/}
-    {/*<Route exact path="/person" component={PersonList} />*/}
-    {/*</Switch>*/}
+    <Switch>
+    <Route path="/person/:id" component={PersonDetail} />
+    <Route exact path="/person" component={PersonList} />
+    </Switch>
   </Fragment>
 );
 
