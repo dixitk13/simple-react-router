@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Sorting Algorithms</h1>
+        {/*<h1>Sorting Algorithms</h1>*/}
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route path="/person" component={Person} />

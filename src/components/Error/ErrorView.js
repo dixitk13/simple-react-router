@@ -1,12 +1,33 @@
 import React from "react";
+import styled from "styled-components";
 
-const ErrorView = ({}) => {
+const ErrorView = () => {
   return (
-    <div className="error-view-container">
-      <div className="header">404</div>
-      <div className="subtext">end of life </div>
-    </div>
+    <Wrapper>
+      <Title>404</Title>
+      <SubTitle>this is the end of the world</SubTitle>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: papayawhip;
+`;
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+const SubTitle = styled.div`
+  font-size: 14px;
+`;
 
 export default ErrorView;
