@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const ErrorView = () => {
   return (
-    <Wrapper>
-      <Title>404</Title>
-      <SubTitle>this is the end of the world</SubTitle>
-    </Wrapper>
+    <ErrorViewContainer>
+      <ErrorTitle>404</ErrorTitle>
+      <ErrorSubTitle>this is the end of the world</ErrorSubTitle>
+    </ErrorViewContainer>
   );
 };
 
-const Wrapper = styled.div`
+const ErrorViewContainer = styled.div`
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -20,13 +20,13 @@ const Wrapper = styled.div`
   background: papayawhip;
 `;
 
-const Title = styled.h1`
+const ErrorTitle = styled.h1`
   font-size: 1.5em;
   text-align: center;
   color: palevioletred;
 `;
 
-const SubTitle = styled.div`
+const ErrorSubTitle = styled.div`
   font-size: 14px;
 `;
 
