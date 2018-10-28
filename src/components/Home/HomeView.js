@@ -13,6 +13,9 @@ const HomeView = () => {
         <TomatoButton as="a" href="/person">
           People
         </TomatoButton>
+        <BlackButton as="a" href="/cubes">
+          Cubes
+        </BlackButton>
       </Buttons>
     </HomeViewContainer>
   );
@@ -41,6 +44,12 @@ const TomatoButton = styled(Button)`
 const MangoButton = styled(Button)`
   color: mango;
   border-color: mango;
+`;
+
+const BlackButton = styled(Button)`
+  background: #4c4c4c;
+  color: white;
+  border-color: #999999;
 `;
 
 const HomeViewContainer = styled.div`
